@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:id="@+id/activity_main"
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+       android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+
+        <LinearLayout
+
+            android:layout_marginTop="@dimen/margin_top_item"
+            android:id="@+id/ln_group_input"
+            android:layout_width="match_parent"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edit_row"
+            android:hint="@string/hint_input_row"
+            android:layout_width="wrap_content"
+            android:layout_marginLeft="@dimen/margin_left_item"
+            android:layout_height="wrap_content"
+            android:inputType="numberSigned" />
+
+            <EditText
+                android:id="@+id/edit_column"
+                android:layout_width="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:hint="@string/hint_input_col"
+                android:layout_height="wrap_content"
+                android:inputType="numberSigned" />
+
+            <Button
+                android:id="@+id/btn_input"
+                android:layout_width="wrap_content"
+                android:text="@string/click_to_print"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/tv_info"
+        android:layout_below="@+id/ln_group_input"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:text="@string/matrix_input"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="fill_parent" android:layout_height="fill_parent"
+         android:layout_below="@+id/tv_info"
+        android:layout_above="@+id/ln_group_result"
+        android:scrollbars="vertical">
+
+        <HorizontalScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:scrollbars="horizontal"
+            android:layout_width="match_parent" android:layout_height="fill_parent">
+            <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/tableMatrix" android:layout_width="match_parent"
+                android:layout_gravity="center"
+                android:layout_height="fill_parent" android:stretchColumns="1"
+                />
+        </HorizontalScrollView>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ln_group_result"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:layout_height="@dimen/height_result_view"
+        >
+
+        <Button
+            android:id="@+id/btn_result"
+            android:layout_width="wrap_content"
+            android:text="@string/result"
+            android:layout_marginLeft="@dimen/margin_left_item"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_below="@+id/ln_group_input"
+            android:layout_width="match_parent"
+            android:gravity="center"
+            android:text="@string/output_result"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/tv_havePath"
+            android:layout_marginTop="@dimen/margin_top_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <TextView
+            android:id="@+id/tv_cost"
+            android:layout_marginTop="@dimen/margin_top_item"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+
+        <TextView
+            android:id="@+id/tv_path"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/margin_top_item"
+            android:layout_height="wrap_content"
+            />
+
+
+    </LinearLayout>
+</RelativeLayout>
