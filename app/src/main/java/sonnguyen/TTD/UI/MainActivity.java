@@ -117,7 +117,7 @@ public class MainActivity extends AppCompatActivity {
     public boolean invalidateInput(){
         int numberRow = Utils.getIntegerNumberFromEditText(editRow);
         int numberColumn = Utils.getIntegerNumberFromEditText(editColumn);
-      return  (numberRow >=1 && numberColumn>= 5) && (numberRow <= 10 && numberColumn <= 100);
+        return  (numberRow >=1 && numberColumn>= 1) ;
     }
 
     /**
@@ -188,7 +188,7 @@ public class MainActivity extends AppCompatActivity {
     @OnClick({  R.id.btn_input, R.id.btn_result})
     public void onClick(View view) {
         switch (view.getId()) {
-             case R.id.btn_input:
+            case R.id.btn_input:
                 handleInputClick();
                 break;
             case R.id.btn_result:
