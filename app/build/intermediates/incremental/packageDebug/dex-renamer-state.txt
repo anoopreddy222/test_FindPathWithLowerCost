@@ -1,0 +1,4 @@
+#Thu Aug 31 02:18:09 CDT 2017
+base.0=C\:\\Users\\anoop\\Desktop\\New folder (2)\\test_FindPathWithLowerCost\\test_FindPathWithLowerCost\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main
+renamed.0=classes.dex
+file.0=C\:\\Users\\anoop\\Desktop\\New folder (2)\\test_FindPathWithLowerCost\\test_FindPathWithLowerCost\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\1f\\main\\classes.dex
